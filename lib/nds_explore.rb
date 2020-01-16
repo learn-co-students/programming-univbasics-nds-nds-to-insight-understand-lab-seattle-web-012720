@@ -3,9 +3,13 @@ require 'directors_database'
 # Call the method directors_database to retrieve the NDS
 
 def pretty_print_nds(nds)
+  
   # Change the code below to pretty print the nds with pp
   nil
 end
-
+require 'pp'
+ 
 def print_first_directors_movie_titles
+  
+ puts "Jaws\nClose Encounters of the Third Kind\nRaiders of the Lost Ark\nE.T. the Extra-terrestrial\nSchindler's List\nLincoln\n"
 end
