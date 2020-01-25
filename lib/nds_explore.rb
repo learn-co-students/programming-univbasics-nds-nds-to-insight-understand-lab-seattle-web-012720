@@ -1,15 +1,24 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+ require 'pp'
+  require 'pry'
 # Call the method directors_database to retrieve the NDS
 
 def pretty_print_nds(nds)
   
   # Change the code below to pretty print the nds with pp
-  nil
+  pp nds
+  #binding.pry
 end
-require 'pp'
+
  
 def print_first_directors_movie_titles
-  
- puts "Jaws\nClose Encounters of the Third Kind\nRaiders of the Lost Ark\nE.T. the Extra-terrestrial\nSchindler's List\nLincoln\n"
+
+ #binding.pry
+ column_index = 0
+  while column_index < directors_database[0][:movies].length do 
+
+    puts directors_database[0][:movies][column_index][:title]
+    column_index += 1
+  end
 end
